@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background-color: #000;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #000;
+            margin: 0 auto;
+        }
+        .b,.c{
+            width: 50%;
+            height: 50%;
+            border-radius: 50%;
+            background-color: #000;
+            margin: 0 auto;
+            position: relative;
+            z-index: 5;
+        }
+        .c{
+            background-color: #fff;
+        }
+        .d{
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            background-color: #fff;
+        }
+        .e,.f{
+            width: 30%;
+            height: 30%;
+            border-radius: 50%;
+            background-color: #fff;
+            position: absolute;
+            top: 35%;
+            left: 35%;
+        }
+        .f{
+            background-color: #000;
+        }
+        .demo{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            margin-top: 20px;
+            background: linear-gradient(to right,#000 0,#000 50%,#fff 50%,#fff 100%);
+        }
+        .bai{
+            position: absolute;
+            top: 100px;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: radial-gradient(#000 0,#000 20%,#fff 20%, #fff 100%);
+        }
+        .hei{
+            position: absolute;
+            top: 0px;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: radial-gradient(#fff 0,#fff 20%,#000 20%, #000 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="b">
+            <div class="e"></div>
+        </div>
+        <div class="c">
+            <div class="f"></div>
+        </div>
+        <div class="d"></div>
+    </div>
+    <!-- <div class="demo">
+        <div class="bai"></div>
+        <div class="hei"></div>
+    </div> -->
+</body>
+</html>
